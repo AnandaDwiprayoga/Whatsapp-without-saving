@@ -1,0 +1,286 @@
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 36px;
+    align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 13px 15px 33px -24px rgba(163,163,163,0.74);
+    -moz-box-shadow: 13px 15px 33px -24px rgba(163,163,163,0.74);
+    box-shadow: 13px 15px 33px -24px rgba(163,163,163,0.74);
+}
+
+nav .nav-right {
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+    display: inline-block;
+}
+
+.nav-right > img {
+    height: 38px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+/* tooltips */
+.nav-right_tooltip {
+    /* visibility: hidden; */
+    width: 300px;       
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5em;
+                        
+    position: absolute;
+    z-index: 1;			
+                        
+    word-wrap: break-word;
+  }
+
+  /* .nav-right:hover .nav-right_tooltip {
+    visibility: visible;
+  }				
+                 */
+  .nav-right_tooltip {
+    right: 0;
+    top: 50px;
+  }
+
+  /* --- Tooltip Arrow || Begin --- */					
+    .nav-right .nav-right_tooltip::after {
+        border-width: 9px;
+        border-style: solid;
+        content: "";
+        position: absolute;
+    }
+    .nav-right_tooltip::after {
+        border-color: transparent transparent black transparent;
+        top: -22px;
+        right: 20px;
+        margin-top: 5px;
+    }
+  /* --- Tooltip Arrow || End --- */
+
+  .nav-right_tooltip p {
+    font-size: 13px;
+    color: whitesmoke;
+  }
+
+  nav p.logout {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+/* end of tooltips */
+
+
+/* contacts section */
+
+main {
+    width: 75%;
+    min-height: 100vh;
+    padding: 30px;
+    margin: auto;
+    /* margin-top: 28px; */
+}
+
+main > h1 {
+    text-align: center;
+}
+
+.contacts {
+    position: relative;
+    margin-top: 16px;
+    padding: 16px;
+    background: white;
+    -webkit-box-shadow: 6px 7px 15px -6px rgba(153,153,153,0.49);
+    -moz-box-shadow: 6px 7px 15px -6px rgba(153,153,153,0.49);
+    box-shadow: 6px 7px 15px -6px rgba(153,153,153,0.49);
+}
+
+.contacts-option {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contacts > p {
+    margin-top: 9px;
+    font-size: 14px;
+}
+
+span.prefix-starter {
+    font-weight: 600;
+}
+
+.wrapper-top {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-top .contacts-left {
+    flex: 1;
+}
+
+.wrapper-top .contacts-left h2.name {
+    font-size: 20px;
+}
+
+.wrapper-top .contacts-left h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #717171;
+}
+
+.wrapper-top .contacts-right {
+    padding: 8px 20px;
+    background: #25D366;
+    border-radius: 36px;
+    cursor: pointer;
+    color: white;
+}
+
+.floating-add {
+    position: fixed;
+    padding: 11px 14px;
+    background: #33B7F1;
+    font-size: 18px;
+    color: white;
+    border-radius: 60%;
+    bottom: 100px;
+    right: 5%;
+    cursor: pointer;
+}
+
+.swal2-input[type=number] {
+    max-width: unset!important;
+}
+
+img.empty-ilustrations {
+    width: 70%;
+}
+
+/* end of contact section  */
+
+
+
+/* modal popup */
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+span.close {
+    font-size: 31px;
+    position: absolute;
+    right: 10px;
+    color: #aaaaaa;
+    font-weight: bold;
+    top: 0;
+}
+
+span.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h1 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.modal-content input, .modal-content textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 2px solid #aaaa;
+}
+
+.modal-content textarea {
+    resize: none;
+}
+
+.modal-action {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.modal-action button {
+    padding: 8px 16px;
+    border: unset;
+    color: white;
+    margin: 0 7px;
+}
+
+.modal-action button.add {
+    background-color: #25D366;
+}
+
+.modal-action .cancel {
+    background-color: #FF6363;
+}
+
+  
+/*  end of modal popup */
+
+
+
+
+
+
+/* responsive web */
+@media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 20px 15px;
+    }
+    main  h1{
+        font-size: 27px;
+    }
+
+    .wrapper-top .contacts-right {
+        padding: 4px 15px;
+    }
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) { 
+    main {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 60%;
+    }
+}
+
+/* end of responsive */
+
